@@ -1,0 +1,9 @@
+.link {
+    color: $dark-grey;
+    text-decoration: none;
+
+    //Cuando el cursor esta encima del texto, subbrayalo
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,14 @@
+.nothing__main-content {
+    align-items: center;
+    background-color: $primary; //Para el Fondo
+    color: white;   //Para la Fuente
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    //Para el Parrafo
+    p{
+        text-align: center;
+    }
+}

@@ -21,16 +21,16 @@ import { types } from "../types/types";
 // export const authreducer = (state =InitialState, action) => {
 
 
-export const authreducer = (state ={}, action) => {
+export const authReducer = (state ={}, action) => {
     switch ( action.type ) {
         case types.login:
             return {
-                uid: action.payload.uis,
-                name: action.paylosd.displayName
+                uid: action.payload.uid,
+                name: action.payload.displayName
             }
         
         case types.logout:
-            return { }  //Retorna un objeto vacio
+            return { }  //Retorna un objeto vacio, lo cual borra los valores existentes
         
         default:
             return state;
