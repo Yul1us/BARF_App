@@ -32,15 +32,21 @@ export const Sidebar = () => {
             <div className='journal__sidebar-navbar'>
                 <h3 className='mt-5'>
                     {/* Clases de: https://cdnjs.com/libraries/font-awesome */}
-                    <i className='far fa-moon'></i>
+                    {/*<i className='far fa-moon'></i>*/}
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                   {/*<i className="fa-thin fa-paw-simple"></i>*/}
+                    {/* <i className="fa-thin fa-cat"></i>*/}
+                  {/*<i className="fal fa-cat"></i>*/}
                     {/* <span> Julio </span> */}
                     <span> {name} </span>
                 </h3>
-
+                
                 <button 
                     className='btn'
                     onClick= { handleLogout }
                 >
+      
+                  <i class="fa fa-sign-out" aria-hidden="true"></i>
                     Logout
                 </button>
             </div>
@@ -50,8 +56,10 @@ export const Sidebar = () => {
                 onClick= { handleAddNew }
             >
                  {/* Clases de: https://cdnjs.com/libraries/font-awesome */}
-                <i className='far fa-calendar-plus fa-5x'></i>
-                <p className='mt-5'>New entry</p>
+                {/*<i className='far fa-calendar-plus fa-5x'></i>*/}
+              <i className="fa-solid fa-dog  fa-5x"></i>
+                {/*<p className='mt-5'>New entry</p*/}
+                <p className='mt-5'>Nueva Mascota</p>
             </div>
 
             <JournalEntries />
